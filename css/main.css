@@ -10,31 +10,28 @@
     --background-green: rgb(0, 171, 105);
     --background-red: rgb(232, 19, 0);
     --background-cyan: rgb(0, 207, 214);
+    --background-grey: rgb(242, 246, 252);
+    --background-white: rgb(225, 230, 237);
 }
 
 /* End variables */
 
+/* Start Components */
 body {
     font-family: "Inter", sans-serif;
-    background-color: rgb(242, 246, 252);
+    background-color: var(--background-grey);
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+/* End Components */
+
+/* Start Drop Down */
+
 .icon-bg {
     background-color: var(--background-icon);
-}
-
-.nav-item a:hover svg {
-    background-color: rgb(242, 246, 252);
-}
-
-.img-logo {
-    width: 40px;
-    border: 3px solid grey !important;
-    transition: all 0.3s ease;
 }
 
 .dropdown-menu {
@@ -45,6 +42,40 @@ html {
 
 .dropdown-toggle::after {
     transform: rotate(-90deg);
+}
+
+
+.dropdown-text {
+    font-size: 14px !important;
+}
+
+.dropdown-cell {
+    transition: 0.3s all ease !important;
+    height: 100% !important;
+}
+
+.dropdown-cell:not(last-child) {
+    border-bottom: 1px solid var(--background-white) !important;
+
+}
+
+.dropdown-cell:hover {
+    background-color: var(--background-white) !important;
+    cursor: pointer !important;
+}
+
+
+/* End Drop Down */
+
+/* Start Nav */
+.nav-item a:hover svg {
+    background-color: var(--background-grey);
+}
+
+.img-logo {
+    width: 40px;
+    border: 3px solid grey !important;
+    transition: all 0.3s ease;
 }
 
 form input {
@@ -64,42 +95,6 @@ form svg {
     color: rgb(113, 120, 130);
 }
 
-.dropdown-text {
-    font-size: 14px !important;
-}
-
-.dropdown-cell {
-    transition: 0.3s all ease !important;
-    height: 100% !important;
-}
-
-.dropdown-cell:not(last-child) {
-    border-bottom: 1px solid rgb(225, 230, 237) !important;
-
-}
-
-.dropdown-cell:hover {
-    background-color: rgb(225, 230, 237) !important;
-    cursor: pointer !important;
-}
-
-.offcanvas-start {
-    width: 250px !important;
-    top: 95px !important;
-}
-
-.content-offcanvas {
-    border-left: 1px solid rgb(225, 230, 237) !important;
-    margin-left: 5px;
-}
-
-
-.welcome {
-    padding: 6rem 0;
-    background-image: linear-gradient(135deg, #0061f2 0%, rgba(105, 0, 199, 0.8) 100%) !important;
-}
-
-
 .trans-img {
     transition: all 0.4s ease;
     border-radius: 10px;
@@ -110,23 +105,58 @@ form svg {
 
 }
 
+/* End Nav */
+
+
+
+/* Start Offcanvas */
+.offcanvas-start {
+    width: 250px !important;
+    top: 95px !important;
+}
+
+.content-offcanvas {
+    border-left: 1px solid var(--background-white) !important;
+    margin-left: 5px;
+}
+
+
+/* End Offcanvas */
+
+
+/* Start Welcome */
+.welcome {
+    padding: 6rem 0;
+    background-image: linear-gradient(135deg, #0061f2 0%, rgba(105, 0, 199, 0.8) 100%) !important;
+}
+
+/* End Welcome */
+
+/* Start Starter */
+
 .starter-content ul li {
     transition: 0.3s all ease;
 }
 
 .starter-content ul li:hover {
-    background-color: rgb(242, 246, 252) !important;
+    background-color: var(--background-grey) !important;
     cursor: pointer;
 }
 
+/* End Starter */
+
+
+/* Start Copyright */
 .copyright a:hover {
     text-decoration: underline !important;
 }
 
+/* End Copyright */
+
+/* Start Settings BTN */
 .settings-btn {
     position: fixed;
     top: 95px;
-    right: 100px;
     right: -20px;
     z-index: 1050;
 
@@ -153,3 +183,5 @@ form svg {
         transform: rotate(360deg);
     }
 }
+
+/* End Settings BTN */
