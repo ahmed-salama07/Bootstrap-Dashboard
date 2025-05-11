@@ -40,9 +40,9 @@ html {
     padding: 0 !important;
 }
 
-.dropdown-toggle::after {
+/* .dropdown-toggle::after {
     transform: rotate(-90deg);
-}
+} */
 
 
 .dropdown-text {
@@ -118,6 +118,10 @@ form svg {
 .content-offcanvas {
     border-left: 1px solid var(--background-white) !important;
     margin-left: 5px;
+}
+
+.offcanvas-content {
+    cursor: pointer;
 }
 
 
