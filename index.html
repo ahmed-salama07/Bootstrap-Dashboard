@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap | Dashboard</title>
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top text-center">
+            <div class="container-fluid">
+
+                <button class="btn ms-2 text-black-50 rounded-circle" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+                        class="fa-solid fa-bars"></i></button>
+                <div class="offcanvas offcanvas-start bg-body-tertiary" data-bs-scroll="true" data-bs-backdrop="false"
+                    tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <h6 class="offcanvas-title text-black-50 mt-3 fw-bold text-uppercase"
+                            id="offcanvasScrollingLabel">Core</h6>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="offcanvas-content position-relative text-start">
+                            <h6 class="text-primary fw-bold d-inline-block"> <i
+                                    class="fa-solid fa-chart-simple pe-4"></i>
+                                Dashboards</h6>
+                            <i class="text-black-50 fa-solid fa-angle-down position-absolute end-0"></i>
+                        </div>
+                        <div class="content-offcanvas  mt-2 ps-5  text-start">
+                            <p class="text-primary fw-bold">Default</p>
+                            <p>Multipurpose</p>
+                            <p>Affilate</p>
+                        </div>
+
+
+                        <div class="category-2 mt-3 text-start text-start">
+                            <h6 class="offcanvas-title text-black-50 mt-3 fw-bold"
+                                id="offcanvasScrollingLabel text-uppercase">Custom
+                            </h6>
+
+                            <div class="offcanvas-content position-relative">
+                                <h6 class="d-inline-block mt-3"> <i class="fa-solid fa-pager pe-4"></i>
+                                    Pages</h6>
+                                <i class="text-black-50 fa-solid fa-angle-right position-absolute end-0 mt-3"></i>
+                            </div>
+                            <div class="offcanvas-content position-relative">
+                                <h6 class="d-inline-block"> <i class="fa-solid fa-earth-americas pe-4"></i>
+                                    Applications</h6>
+                                <i class="text-black-50 fa-solid fa-angle-right position-absolute end-0 mt-1"></i>
+                            </div>
+                            <div class="offcanvas-content position-relative">
+                                <h6 class="d-inline-block"> <i class="fa-brands fa-gg pe-4"></i>
+                                    Flows</h6>
+                                <i class="text-black-50 fa-solid fa-angle-right position-absolute end-0 mt-1"></i>
+                            </div>
+                        </div>
+
+                        <div class="category-3 mt-3 text-start">
+                            <h6 class="offcanvas-title text-black-50 mt-3 fw-bold text-uppercase"
+                                id="offcanvasScrollingLabel">UI TOOLKIT
+                            </h6>
+                            <div class="offcanvas-content position-relative">
+                                <h6 class="d-inline-block mt-3"> <i class="fa-solid fa-award pe-4"></i>
+                                    Layout</h6>
+                                <i class="text-black-50 fa-solid fa-angle-right position-absolute end-0 mt-3"></i>
+                            </div>
+                            <div class="offcanvas-content position-relative">
+                                <h6 class="d-inline-block"> <i class="fa-solid fa-box pe-4"></i>
+                                    Components</h6>
+                                <i class="text-black-50 fa-solid fa-angle-right position-absolute end-0 mt-1"></i>
+                            </div>
+                            <div class="offcanvas-content position-relative">
+                                <h6 class="d-inline-block"> <i class="fa-solid fa-shield-virus pe-4"></i>
+                                    Utilities</h6>
+                                <i class="text-black-50 fa-solid fa-angle-right position-absolute end-0 mt-1"></i>
+                            </div>
+                        </div>
+
+                        <div class="category-3 mt-3 text-start">
+                            <h6 class="offcanvas-title text-black-50 mt-3 fw-bold text-uppercase"
+                                id="offcanvasScrollingLabel">Plugins
+                            </h6>
+                            <div class="offcanvas-content position-relative">
+                                <h6 class="d-inline-block mt-3"> <i class="fa-solid fa-viruses pe-4"></i>
+                                    Charts</h6>
+                                <i class="text-black-50 fa-solid fa-angle-right position-absolute end-0 mt-3"></i>
+                            </div>
+                            <div class="offcanvas-content position-relative">
+                                <h6 class="d-inline-block"> <i class="fa-solid fa-vial-virus pe-4"></i>
+                                    Tables</h6>
+                                <i class="text-black-50 fa-solid fa-angle-right position-absolute end-0 mt-1"></i>
+                            </div>
+                        </div>
+
+                        <div class="logged position-absolute bottom-0 bg-body-secondary">
+                            <p class="text-black-50 dropdown-text">Logged in as:</p>
+                            <p>Valerie Luna</p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+                <a class="navbar-brand fw-bold fs-6 ms-3" href="#">SB Admin Pro</a>
+                <form class="d-flex ms-5 position-relative">
+                    <input class="form-control ms-5 p-2 bg-body-tertiary" type="search" placeholder="Search"
+                        aria-label="Search ">
+                    <i class="fa-solid fa-magnifying-glass end-0 position-absolute"></i>
+                </form>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle  me-3 mt-1 pt-3" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Documentation
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <div
+                                        class="d-flex justify-content-around align-items-center dropdown-cell w-100 p-2">
+                                        <i
+                                            class="fa-solid fa-book me-4 ms-3 icon-bg rounded-circle p-2 text-primary"></i>
+                                        <div class="drop-down-content">
+                                            <p class="text-black-50 m-0 dropdown-text">Documentation</p>
+                                            <p class="me-4">Usage instructions and reference</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div
+                                        class="d-flex justify-content-around align-items-center me-1 dropdown-cell w-100 p-2">
+                                        <i
+                                            class="fa-solid fa-code me-4 ms-3 icon-bg rounded-circle p-2 text-primary"></i>
+                                        <div class="drop-down-content">
+                                            <p class="text-black-50 m-0 dropdown-text">Components</p>
+                                            <p class="me-5">Code snippets and reference</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div
+                                        class="d-flex justify-content-around align-items-center dropdown-cell w-100 p-2">
+                                        <i
+                                            class="fa-solid fa-file-invoice me-4 ms-3 icon-bg rounded-circle p-2 text-primary"></i>
+                                        <div class="drop-down-content me-5">
+                                            <p class="text-black-50 m-0 dropdown-text">Changelog</p>
+                                            <p class="me-5">Updates and Changes</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#"><i
+                                    class="fa-solid fa-bell text-black-50 p-3 rounded-circle"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i
+                                    class="fa-solid fa-envelope text-black-50 p-3 rounded-circle"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="images/logo.png"
+                                    class="img-logo rounded-circle me-3 mb-1" alt="Logo"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="settings-button">
+            <div class="settings-btn d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-gear me-3"></i>
+            </div>
+        </div>
+        <section>
+            <div class="welcome text-center">
+                <div class="container text-light  mt-5">
+                    <h3>Welcome to SB Admin Pro</h3>
+                    <p class="text-white-50">A professionally designed admin panel template built with Bootstrap 5</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard">
+            <div class="container mt-5">
+                <h3>Dashboards</h3>
+                <p class="text-black-50">Three dashboard examples to get you started!</p>
+                <hr class="text-black-50">
+                <div class="row text-center">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="images/dashboard1.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Default Dashboard</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="images/dashboard2.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Affilate Dashboard</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="images/dashboard3.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Multipurpose Dashboard</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="app-pages">
+            <div class="container mt-5">
+                <h3>App Pages</h3>
+                <p class="text-black-50">App pages to cover common use pages to help build your app!</p>
+                <hr class="text-black-50">
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages1.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Account - Billing</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages2.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Account - Notifications</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages3.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Account - Profile</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages4.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Account - Profile</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages5.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Auth - Login</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages6.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Auth - Login (Social)</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages7.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Auth - Multi Tenant</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages8.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Auth - Password</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages9.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Auth - Password (Social)</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages10.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Auth - Register</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages11.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Auth - Register (Social)</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages12.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Invoice</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages13.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Knowledgebase - Article</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages14.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Knowledgebase - Category</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages15.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Knowledgebase - Home 1</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages16.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Knowledgebase - Home 2</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages17.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Pricing</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img src="images/pages18.png" class="img-fluid trans-img" alt="">
+                        <p class="text-black-50 pt-1">Wizard</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="starter">
+            <div class="container mt-5">
+                <h3>Starter Layouts</h3>
+                <p class="text-black-50">Layouts for creating new pages within your project!</p>
+                <hr class="text-black-50">
+
+                <div class="row align-items-start">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="starter-content">
+                            <p class="m-0 text-black-50">Navigation</p>
+                            <div class="card mt-1 bg-white">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item p-3">Static Sidenav
+                                        <i
+                                            class="text-black-50 fa-solid fa-arrow-right position-absolute end-0 me-4 mt-1"></i>
+                                    </li>
+                                    <li class="list-group-item p-3">Dark Sidenav
+                                        <i
+                                            class="text-black-50 fa-solid fa-arrow-right position-absolute end-0 me-4 mt-1"></i>
+
+                                    </li>
+                                    <li class="list-group-item p-3">RTL Layout
+                                        <i
+                                            class="text-black-50 fa-solid fa-arrow-right position-absolute end-0 me-4 mt-1"></i>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="m-0 text-black-50 mt-3">Container Options</p>
+                            <div class="card mt-1">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item p-3">Boxed Layouts
+                                        <i
+                                            class="text-black-50 fa-solid fa-arrow-right position-absolute end-0 me-4 mt-1"></i>
+
+                                    </li>
+                                    <li class="list-group-item p-3">Fluid Layout
+                                        <i
+                                            class="text-black-50 fa-solid fa-arrow-right position-absolute end-0 me-4 mt-1"></i>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="starter-content">
+                            <p class="m-0 text-black-50">Page Headers</p>
+                            <div class="card mt-1">
+                                <ul class=" list-group list-group-flush">
+                                    <li class="list-group-item p-3">Simplified
+                                        <i
+                                            class="text-black-50 fa-solid fa-arrow-right position-absolute end-0 me-4 mt-1"></i>
+
+                                    </li>
+                                    <li class="list-group-item p-3">Compact
+                                        <i
+                                            class="text-black-50 fa-solid fa-arrow-right position-absolute end-0 me-4 mt-1"></i>
+
+                                    </li>
+                                    <li class="list-group-item p-3">Content Overlap
+                                        <i
+                                            class="text-black-50 fa-solid fa-arrow-right position-absolute end-0 me-4 mt-1"></i>
+
+                                    </li>
+                                    <li class="list-group-item p-3">Breadcrumbs
+                                        <i
+                                            class="text-black-50 fa-solid fa-arrow-right position-absolute end-0 me-4 mt-1"></i>
+
+                                    </li>
+                                    <li class="list-group-item p-3">Light
+                                        <i
+                                            class="text-black-50 fa-solid fa-arrow-right position-absolute end-0 me-4 mt-1"></i>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="starter-content">
+                            <p class="m-0 text-black-50">Starter Layouts</p>
+                            <div class="card mt-1">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item p-3">Default
+                                        <i
+                                            class="text-black-50 fa-solid fa-arrow-right position-absolute end-0 me-4 mt-1"></i>
+
+                                    </li>
+                                    <li class="list-group-item p-3">Minimal
+                                        <i
+                                            class="text-black-50 fa-solid fa-arrow-right position-absolute end-0 me-4 mt-1"></i>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="copyright">
+                <div class="container mt-5">
+                    <div class="d-flex justify-content-between">
+                        <div class="copyright-text">
+                            <p class="text-black-50">Copyright &copy; <a class="text-decoration-none text-black-50"
+                                    target="_blank" href="https://ahmed-salama07.github.io/Ahmed-Salama-CV/">Ahmed
+                                    Salama
+                                    2025</a></p>
+                        </div>
+                        <div class="links d-flex justify-content-between">
+                            <a class="text-black-50 text-decoration-none" href="#">Privacy Policy</a>
+                            <p class="text-black-50 me-2 ms-2">.</p>
+                            <a class="text-black-50 text-decoration-none" href="#">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>

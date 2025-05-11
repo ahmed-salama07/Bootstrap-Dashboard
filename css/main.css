@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* Start variables */
+
+:root {
+    --background-icon: rgb(217, 230, 250);
+    --background-blue: rgb(51, 48, 219);
+    --background-yellow: rgb(245, 163, 0);
+    --background-green: rgb(0, 171, 105);
+    --background-red: rgb(232, 19, 0);
+    --background-cyan: rgb(0, 207, 214);
+}
+
+/* End variables */
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgb(242, 246, 252);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.icon-bg {
+    background-color: var(--background-icon);
+}
+
+.nav-item a:hover svg {
+    background-color: rgb(242, 246, 252);
+}
+
+.img-logo {
+    width: 40px;
+    border: 3px solid grey !important;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu {
+    min-width: 23rem !important;
+    left: -14rem !important;
+    padding: 0 !important;
+}
+
+.dropdown-toggle::after {
+    transform: rotate(-90deg);
+}
+
+form input {
+    background-color: rgb(237, 241, 247) !important;
+}
+
+form input::placeholder {
+    color: rgb(113, 120, 130) !important;
+    opacity: 0.5 !important;
+    padding-left: 10px !important;
+}
+
+form svg {
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 20px;
+    color: rgb(113, 120, 130);
+}
+
+.dropdown-text {
+    font-size: 14px !important;
+}
+
+.dropdown-cell {
+    transition: 0.3s all ease !important;
+    height: 100% !important;
+}
+
+.dropdown-cell:not(last-child) {
+    border-bottom: 1px solid rgb(225, 230, 237) !important;
+
+}
+
+.dropdown-cell:hover {
+    background-color: rgb(225, 230, 237) !important;
+    cursor: pointer !important;
+}
+
+.offcanvas-start {
+    width: 250px !important;
+    top: 95px !important;
+}
+
+.content-offcanvas {
+    border-left: 1px solid rgb(225, 230, 237) !important;
+    margin-left: 5px;
+}
+
+
+.welcome {
+    padding: 6rem 0;
+    background-image: linear-gradient(135deg, #0061f2 0%, rgba(105, 0, 199, 0.8) 100%) !important;
+}
+
+
+.trans-img {
+    transition: all 0.4s ease;
+    border-radius: 10px;
+}
+
+.trans-img:hover {
+    transform: translateY(-10px);
+
+}
+
+.starter-content ul li {
+    transition: 0.3s all ease;
+}
+
+.starter-content ul li:hover {
+    background-color: rgb(242, 246, 252) !important;
+    cursor: pointer;
+}
+
+.copyright a:hover {
+    text-decoration: underline !important;
+}
+
+.settings-btn {
+    position: fixed;
+    top: 95px;
+    right: 100px;
+    right: -20px;
+    z-index: 1050;
+
+    width: 70px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.settings-btn svg {
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
